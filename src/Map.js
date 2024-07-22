@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import { createRoot } from 'react-dom/client';
 import points from './points.json';
 import routes from './routes.json';
-import sources from './sources_part2.json';
+import sources from './souces_part1.json';
 // import sources from './ride_history1.json';
 import './Map.css';
 
@@ -49,8 +49,8 @@ const Map = () => {
         const map = new mapboxgl.Map({
             container: mapContainerRef.current,
             style: 'mapbox://styles/mapbox/light-v11',
-            center: [136.897505, 35.173245],
-            zoom: 16,
+            center: [136.88658575807116, 35.17575824604808],
+            zoom: 16.5,
         });
 
         let qz1Source;
